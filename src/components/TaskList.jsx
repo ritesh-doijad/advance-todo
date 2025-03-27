@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import TaskItem from "./TaskItem";
 
 import {
+  deleteTask,
   selectTasksByPriority,
   toggleCompletion,
   toggleImportance,
@@ -57,7 +58,7 @@ const TaskList = () => {
                 isOutdoorTask={isOutdoorTask(task)}
                 weather={weather}
                 toggleTaskCompletion={() => dispatch(toggleCompletion(task.id))}
-                toggleTaskImportance={() => dispatch(toggleImportance(task.id))}
+                deleteTask ={() => dispatch(deleteTask(task.id))}
               />
             ))}
           </div>
@@ -74,7 +75,7 @@ const TaskList = () => {
                 key={task.id}
                 task={task}
                 toggleTaskCompletion={() => dispatch(toggleCompletion(task.id))}
-                toggleTaskImportance={() => dispatch(toggleImportance(task.id))}
+                deleteTask ={() => dispatch(deleteTask(task.id))}
               />
             ))}
           </div>

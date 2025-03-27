@@ -1,7 +1,7 @@
 import React from "react";
-import { Star } from "lucide-react";
+import { Trash2 } from "lucide-react";
 
-function TaskItem({ task, isOutdoorTask, weather, toggleTaskCompletion, toggleTaskImportance }) {
+function TaskItem({ task, isOutdoorTask, weather, toggleTaskCompletion, deleteTask  }) {
 
   return (
     <div className="flex items-center justify-between bg-white p-4 rounded-lg shadow cursor-pointer hover:bg-gray-100">
@@ -32,11 +32,11 @@ function TaskItem({ task, isOutdoorTask, weather, toggleTaskCompletion, toggleTa
       <button
         onClick={(e) => {
           e.stopPropagation();
-          toggleTaskImportance(task.id);
+          deleteTask(task.id);
         }}
-        className={`p-1 rounded-full ${task.important ? "text-yellow-500" : "text-gray-400"}`}
+        className="p-1 rounded-full text-red-500 hover:text-red-700 transition duration-150"
       >
-        <Star className="h-5 w-5" fill={task.important ? "currentColor" : "none"} />
+        <Trash2 className="h-5 w-5" />
       </button>
     </div>
   );
