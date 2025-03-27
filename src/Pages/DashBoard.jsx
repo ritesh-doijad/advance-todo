@@ -15,7 +15,7 @@ const DashBoard = () => {
   const completedTaskCount = tasks.filter((task) => task.completed).length;
   return (
     <div className="flex w-full h-screen overflow-hidden">
-      <div className="hidden md:flex p-4 border-r h-screen">
+      <div className="hidden md:flex p-3 border-r h-screen">
         <Sidebar
           expanded={expanded}
           setExpanded={setExpanded}
@@ -25,7 +25,7 @@ const DashBoard = () => {
       </div>
 
       {/* Main Content - Scrollable */}
-      <div className="flex-grow p-4 h-full flex flex-col">
+      <div className="flex-grow p-3 h-full flex flex-col">
         {/* Fixed Header */}
         <div className="sticky top-0 z-10 bg-white shadow-md">
           <Header />
