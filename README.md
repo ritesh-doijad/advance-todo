@@ -88,3 +88,9 @@ Start the server
 
 https://advance-todo-bice.vercel.app/login
 
+
+## 🔗 Links
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://riteshdoijad-fmadc9yrs-riteshs-projects-b99d6186.vercel.app/)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](www.linkedin.com/in/riteshdoijad284)
+
+
